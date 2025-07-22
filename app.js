@@ -38,7 +38,7 @@ const maxOfTwoNumbers = (x, y) => {
 
 
    function greetUser(name,time){
-    return `good${name}@${time }`;
+    return `good${time}@${name}`;
    }
    console.log('Exercise 5 Result:', greetUser("Sam", "morning"));
 
@@ -67,7 +67,7 @@ const maxOfTwoNumbers = (x, y) => {
         if (scale == 'C' ){
             return (temp * 9/5)+ 32;
         }
-        else if (scale == 'f' ){
+        else if (scale == 'F' ){
             return (temp - 32) *5/9;
         }
         else {
@@ -113,7 +113,7 @@ const maxOfTwoNumbers = (x, y) => {
           function createUsername(firstname , lastname) {
           const firstthree = firstname.slice(0,3);
           const lastthree = lastname.slice(0,3);
-          const totalnumbers = firstthree.length + lastthree.length;
+          const totalnumbers = firstname.length + lastname.length;
           return firstname + lastname + totalnumbers;
           }
           console.log('Exercise 11 Result:', createUsername("Samantha", "Green"));
