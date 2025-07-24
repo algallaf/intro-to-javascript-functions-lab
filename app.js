@@ -38,7 +38,7 @@ const maxOfTwoNumbers = (x, y) => {
 
 
    function greetUser(name,time){
-    return `good${time}@${name}`;
+    return `Good ${time}, ${name}!`;
    }
    console.log('Exercise 5 Result:', greetUser("Sam", "morning"));
 
@@ -71,7 +71,7 @@ const maxOfTwoNumbers = (x, y) => {
             return (temp - 32) *5/9;
         }
         else {
-            return "invailed";
+            return "invaild";
         }
     }
 
@@ -114,7 +114,7 @@ const maxOfTwoNumbers = (x, y) => {
           const firstthree = firstname.slice(0,3);
           const lastthree = lastname.slice(0,3);
           const totalnumbers = firstname.length + lastname.length;
-          return firstname + lastname + totalnumbers;
+          return firstthree + lastthree + totalnumbers;
           }
           console.log('Exercise 11 Result:', createUsername("Samantha", "Green"));
 
